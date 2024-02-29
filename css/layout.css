@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: khaki;
+    justify-content: center;
+    display: flex
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
